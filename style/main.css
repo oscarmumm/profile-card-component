@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+}
+
+html {
+    font-size: 18px;
+    position: relative;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container {
+    min-height: 100vh;
+    width: 100%;
+    padding: 50px 0;
+    background: url("../images/bg-pattern-top.svg") right 50vw bottom 50vh
+            no-repeat fixed,
+        url("../images/bg-pattern-bottom.svg") left 50vw top 50vh no-repeat
+            fixed,
+        var(--Dark-cyan);
+}
+
+.card-section {
+    flex-direction: column;
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+}
+
+.main-data {
+    padding: 0 5rem 0 5rem;
+    border-radius: 10px 10px 0 0;
+    display: grid;
+    place-items: center;
+    grid-template-rows: repeat(3,1fr);
+    background: url('../images/bg-pattern-card.svg') no-repeat;
+    background-size: auto 50%;
+}
+
+.main-data h3 span {
+    color: var(--Dark-grayish-blue);
+}
+
+.main-data p {
+    color: var(--Dark-grayish-blue);
+}
+
+.profile-picture {
+    border-radius: 50%;
+    border: 5px solid white;
+    grid-row: 2 /3;
+}
+
+.data {
+    grid-row: 3/4;
+    text-align: center;
+}
+
+.data span {
+    margin-left: .5rem;
+    font-weight: 400;
+}
+
+.data p {
+    margin-top: .5rem;
+    font-size: 15px;
+}
+
+.stats {
+    border-top: 1px solid var(--Dark-grayish-blue);
+    padding: 2rem 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.stats p {
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stats p span {
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: .1rem;
+    margin-top: .25rem;
+    color: var(--Dark-grayish-blue);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    color: #fff;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: var(--Very-dark-desaturated-blue);
+    text-decoration: none;
+    font-weight: bold;
+}
